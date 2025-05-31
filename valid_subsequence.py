@@ -11,8 +11,6 @@ def if_valid_subseq(a, b):
     return False
 
 
-
-
 a = [1,2,3,4,5,10]
 b = [2,3,5]
 
