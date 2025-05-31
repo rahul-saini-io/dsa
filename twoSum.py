@@ -1,5 +1,5 @@
 def two_sum(a, t):
-    # since I have to return numbers so I can use two pointers
+    # since I have to return numbers, so I can use two pointers
     a.sort()
     # -10, -1, 1, 6, 11
     i, j = 0, len(a)-1
@@ -16,7 +16,22 @@ def two_sum(a, t):
     return []
 
 
+def two_sum_map(a, t):
+    # since I have to return indexes, so will use map
+
+    map = {}
+    for i, num in enumerate(a):
+        if (t-num) in map:
+        # we got are pairs return indexes
+            return [map[t-num], i]
+        # store num with it's index
+        map[num] = i
+    return []
+
 a = [-10, 1, 11, -1, 6]
-t = 0
+b = [-10, 1, 11, -1, 6]
+
+t = 10
 
 print(two_sum(a, t))
+print(two_sum_map(b, t))
