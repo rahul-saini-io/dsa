@@ -12,8 +12,11 @@ def two_sum(a, t):
         else:
             j-=1
 
+    # no pair found
+    return []
+
 
 a = [-10, 1, 11, -1, 6]
-t = 10
+t = 0
 
 print(two_sum(a, t))
