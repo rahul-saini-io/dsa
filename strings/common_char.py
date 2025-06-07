@@ -10,8 +10,8 @@ def common_char(words_arr):
     n = len(words_arr)
     res = []
     for word in words_arr:
-        uniq_word = set(word)
-        for ch in uniq_word:
+        uniq_ch_word = set(word)
+        for ch in uniq_ch_word:
             if ch in f_map:
                 f_map[ch] += 1
             else:
