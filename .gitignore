@@ -1,0 +1,17 @@
+
+# Ignore entire folder and all its contents
+practice/
+
+# Alternative ways to ignore folders:
+# folder-name/*     # Ignores all files in folder but keeps the folder structure
+# folder-name/**/*  # Ignores all files and subfolders recursively
+
+# Common folders to ignore:
+node_modules/
+dist/
+build/
+.env
+.DS_Store
+*.log
+temp/
+cache/
